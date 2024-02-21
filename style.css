@@ -1,0 +1,39 @@
+body{
+background-color: #EFF1FA;
+}
+
+.logoAlura{
+    margin: 20px 0 0 0px;
+}
+
+.textoIngreso{
+    background-color: #EFF1FA;
+    border: none;
+    padding: 5px;
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+    outline: 0 none;
+    resize: none;
+}
+
+#textoSalida{
+    width: 25%;
+}
+
+.alertaMinusculas{
+    color: #495057;
+    margin: 20px;
+    align-items: center;
+}
+
+.botonesInteracion {
+    background-color: #0A3871;
+    width: 199px;
+    height: 67px;
+    top: 107px;
+    left: 24px;
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+    border: none;
+}
