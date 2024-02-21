@@ -3,17 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
         <title>Encriptador</title>
     </head>
+    
     <body>
-        <img src="Imagenes/Logo.png" alt="Logotipo Alura">
-        <h2>Ingrese el texto aquí:</h2>
-        <textarea cols="70" rows="10" class="textoSecreto" required placeholder="Ingrese el texto aquí"></textarea>
-        <p>Solo letras minúsculas sin acento</p>
-        <div class="botonesInteracion">
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
-            <button>Copiar</button>
-        </div>    
+        
+        <header>
+            <img class="logoAlura" src="Imagenes/Logo.png" alt="Logotipo Alura">
+        </header>
+
+        <main>
+            <textarea class="textoIngreso" cols="50" rows="10" class="textoSecreto" required placeholder="Ingrese el texto aquí"></textarea>
+            <textarea id="textoSalida" placeholder="Salida de texto encriptado"></textarea>
+
+            <img src="Imagenes/Vector.png">
+            <p class="alertaMinusculas">Solo letras minúsculas sin acento</p>
+            <div>
+                <button class="botonesInteracion">Encriptar</button>
+                <button class="botonesInteracion">Desencriptar</button>
+                <button class="botonesInteracion">Copiar</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Santiago Pocón</p>
+        </footer>
     </body>
 </html>
