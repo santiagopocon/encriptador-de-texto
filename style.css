@@ -6,24 +6,33 @@ background-color: #EFF1FA;
     margin: 20px 0 0 0px;
 }
 
+.areaDeTexto{
+    position: relative;
+}
+
 .textoIngreso{
     background-color: #EFF1FA;
     border: none;
-    padding: 5px;
-    margin: 20px 0 0 20px;
+    margin: 0 auto;
     font-size: 20px;
     outline: 0 none;
     resize: none;
+    width: 48%;
 }
 
 #textoSalida{
-    width: 25%;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    outline: 0 none;
+    resize: none;
+    width: 48%;
 }
 
 .alertaMinusculas{
     color: #495057;
     margin: 20px;
-    align-items: center;
 }
 
 .botonesInteracion {
@@ -37,3 +46,4 @@ background-color: #EFF1FA;
     color: white;
     border: none;
 }
+
