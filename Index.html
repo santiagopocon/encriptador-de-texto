@@ -15,20 +15,30 @@
         </header>
 
         <main>
-            <textarea class="textoIngreso" cols="50" rows="10" class="textoSecreto" required placeholder="Ingrese el texto aquí"></textarea>
-            <textarea id="textoSalida" placeholder="Salida de texto encriptado"></textarea>
+            
+            <section class="areaDeTexto">
+                <textarea class="textoIngreso" required placeholder="Ingrese el texto aquí"></textarea>
 
-            <img src="Imagenes/Vector.png">
-            <p class="alertaMinusculas">Solo letras minúsculas sin acento</p>
-            <div>
-                <button class="botonesInteracion">Encriptar</button>
-                <button class="botonesInteracion">Desencriptar</button>
-                <button class="botonesInteracion">Copiar</button>
-            </div>
+                <div>
+                    <button class="botonesInteracion">Encriptar</button>
+                    <button class="botonesInteracion">Desencriptar</button>
+                    <button class="botonesInteracion">Copiar</button>
+                </div>
+            </section>
+
+            <p class="alertaMinusculas">&#9888 Solo letras minúsculas sin acento.</p>
+
+            <section>
+                <textarea id="textoSalida"></textarea>
+            </section>
+
         </main>
 
         <footer>
             <p>Santiago Pocón</p>
         </footer>
+
+        <script src="Inicio.js"></script>
+
     </body>
 </html>
