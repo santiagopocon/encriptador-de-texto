@@ -17,20 +17,17 @@
         <main>
             
             <section class="areaDeTexto">
-                <textarea class="textoIngreso" required placeholder="Ingrese el texto aquí"></textarea>
+                <textarea id="textoIngreso" class="textoIngreso" required placeholder="Ingrese el texto aquí"></textarea>
+                <textarea id="textoSalida" readonly></textarea>
 
+                <div id="mensajeCopiado"></div>
                 <div>
-                    <button class="botonesInteracion">Encriptar</button>
-                    <button class="botonesInteracion">Desencriptar</button>
-                    <button class="botonesInteracion">Copiar</button>
-                </div>
+                    <button class="botonesInteracion" onclick="btnEncriptar()" >Encriptar</button>
+                    <button class="botonesInteracion" onclick="btnDesencriptar()" >Desencriptar</button>
+                    <button class="botonesInteracion" onclick="btncopiarTexto()" >Copiar</button>
+                </div>              
             </section>
-
             <p class="alertaMinusculas">&#9888 Solo letras minúsculas sin acento.</p>
-
-            <section>
-                <textarea id="textoSalida"></textarea>
-            </section>
 
         </main>
 
