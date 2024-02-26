@@ -17,17 +17,19 @@ background-color: #EFF1FA;
     font-size: 20px;
     outline: 0 none;
     resize: none;
-    width: 48%;
+    width: 577px;
+    height: 744px;
 }
 
 #textoSalida{
     border: none;
-    border-radius: 20px;
-    margin: 0 auto;
+    border-radius: 32px;
     font-size: 20px;
     outline: 0 none;
     resize: none;
-    width: 48%;
+    width: 400px;
+    height: 744px;
+    padding: 12px;
 }
 
 .alertaMinusculas{
