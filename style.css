@@ -1,51 +1,83 @@
-body{
-background-color: #EFF1FA;
+*{
+    background-color: #EFF1FA;
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .logoAlura{
     margin: 20px 0 0 0px;
 }
 
-.areaDeTexto{
-    position: relative;
+main{
+    display: flex;
+    margin: 20px;
 }
 
 .textoIngreso{
-    background-color: #EFF1FA;
     border: none;
     margin: 0 auto;
     font-size: 20px;
     outline: 0 none;
     resize: none;
-    width: 577px;
-    height: 744px;
+    /*width: 577px;*/
+    /*height: 644px;*/
 }
 
-#textoSalida{
+.areaDeTextoSalida{
+    background:white;
+    background-image: url(Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
     border: none;
     border-radius: 32px;
     font-size: 20px;
     outline: 0 none;
     resize: none;
-    width: 400px;
-    height: 744px;
+    /*width: 400px;*/
+    /*height: 644px;*/
     padding: 12px;
 }
 
 .alertaMinusculas{
     color: #495057;
     margin: 20px;
+    font-size: 12px;
+}
+
+.botones{
+    display: flex;
 }
 
 .botonesInteracion {
     background-color: #0A3871;
-    width: 199px;
+    width: 330px;
     height: 67px;
-    top: 107px;
-    left: 24px;
     border-radius: 24px;
-    padding: 24px;
     color: white;
     border: none;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
+.botonesInteracion2{
+    background-color: #D8DFE8;
+    width: 330px;
+    height: 67px;
+    border-radius: 24px;
+    color: #0A3871;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.botonesInteracion3 {
+    background-color: #0A3871;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    position: absolute;
+}
