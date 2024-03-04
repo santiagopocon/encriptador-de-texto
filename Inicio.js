@@ -2,7 +2,7 @@
 
 let campoEntrada = document.querySelector("#textoIngreso");
 let campoSalida = document.querySelector("#textoSalida");
-let msnCopiado = document.querySelector("#mensajeCopiado");
+//let msnCopiado = document.querySelector("#mensajeCopiado");
 
 // Matriz con los códigos por vocal, debe estar de este orden, de lo contario genera confusión entre las vocales a, i.
 let listaCodigo = [
@@ -17,6 +17,7 @@ let listaCodigo = [
 function btnEncriptar (){
     let mensajeEncriptar = encriptar(campoEntrada.value); // Llama a la función que estará encriptando el mensaje.
     campoSalida.value = mensajeEncriptar;
+    campoSalida.style.backgroundImage = "none";
 }
 
 function btnDesencriptar(){
@@ -27,12 +28,13 @@ function btnDesencriptar(){
 function btncopiarTexto() {
     textoCopiado = campoSalida.value;
     navigator.clipboard.writeText(textoCopiado); // API del portapapeles.
-    msnCopiado.innerHTML="Mensaje copiado al portapapeles";
+    //msnCopiado.innerHTML="Mensaje copiado al portapapeles";
     return textoCopiado;
 }
 
 // funcion para encriptar el mensaje.
 function encriptar(mensajeEncriptado){
+    mensajeEncriptado=mensajeEncriptado.toLowerCase();
     for (let i = 0; i < listaCodigo.length; i++) {
         if (mensajeEncriptado.includes(listaCodigo[i][0])){
             mensajeEncriptado = mensajeEncriptado.replaceAll(
