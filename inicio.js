@@ -23,6 +23,7 @@ function btnEncriptar (){
 function btnDesencriptar(){
     let mensajeParaDesencriptar = desencriptar(campoEntrada.value); // Llama a la función que estará desencriptando el mensaje.
     campoSalida.value = mensajeParaDesencriptar;
+    campoSalida.style.backgroundImage = "none";
 }
 
 function btncopiarTexto() {
