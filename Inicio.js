@@ -2,7 +2,7 @@
 
 let campoEntrada = document.querySelector("#textoIngreso");
 let campoSalida = document.querySelector("#textoSalida");
-//let msnCopiado = document.querySelector("#mensajeCopiado");
+let msnCopiado = document.querySelector("#mensajeCopiado");
 
 // Matriz con los códigos por vocal, debe estar de este orden, de lo contario genera confusión entre las vocales a, i.
 let listaCodigo = [
@@ -28,7 +28,8 @@ function btnDesencriptar(){
 function btncopiarTexto() {
     textoCopiado = campoSalida.value;
     navigator.clipboard.writeText(textoCopiado); // API del portapapeles.
-    //msnCopiado.innerHTML="Mensaje copiado al portapapeles";
+    msnCopiado.innerHTML = "¡Texto copiado!";
+    setTimeout(() => msnCopiado.innerHTML = "", 1000);
     return textoCopiado;
 }
 
