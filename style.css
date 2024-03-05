@@ -81,3 +81,11 @@ main{
     cursor: pointer;
     position: absolute;
 }
+
+.pie-pagina{
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 20px;
+}
